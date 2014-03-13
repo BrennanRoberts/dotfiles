@@ -9,7 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " github
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
@@ -33,9 +33,13 @@ set showmode                    "Show current mode down the bottom
 set wildmenu                    "Tab completion
 set wildmode=list:longest
 
-" powerline
+" airline
 set laststatus=2   " Always show the statusline
-" let g:Powerline_symbols="fancy"
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+
 
 " solarized
 let g:solarized_termcolors = &t_Co
