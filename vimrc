@@ -15,6 +15,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'pangloss/vim-javascript'
+Bundle 'airblade/vim-gitgutter'
 
 filetype plugin indent on
 " end vundle init
