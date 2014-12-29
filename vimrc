@@ -41,6 +41,8 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
+" ctrlp
+let g:ctrlp_custom_ignore = 'node_modules/'
 
 " solarized
 let g:solarized_termcolors = &t_Co
