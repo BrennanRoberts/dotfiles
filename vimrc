@@ -4,7 +4,7 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 " vundle init
 filetype off
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 Plugin 'gmarik/vundle'
 
@@ -16,6 +16,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
+
+call vundle#end()
 
 filetype plugin indent on
 " end vundle init
