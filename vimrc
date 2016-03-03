@@ -3,19 +3,24 @@ set encoding=utf-8 " Necessary to show unicode glyphs
 
 " vundle init
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/vundle'
-
 " github
-Plugin 'bling/vim-airline'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-markdown'
+Plugin 'fatih/vim-go'
+
+call vundle#end()
 
 call vundle#end()
 
@@ -43,12 +48,12 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
-" ctrlp
-let g:ctrlp_custom_ignore = 'node_modules/'
-
 " solarized
 let g:solarized_termcolors = &t_Co
 let g:solarized_termtrans = 1
+
+" ctrlp
+let g:ctrlp_custom_ignore = 'node_modules'
 
 "style
 syntax on
