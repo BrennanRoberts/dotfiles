@@ -22,8 +22,6 @@ Plugin 'fatih/vim-go'
 
 call vundle#end()
 
-call vundle#end()
-
 filetype plugin indent on
 " end vundle init
 
