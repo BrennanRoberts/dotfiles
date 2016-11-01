@@ -13,6 +13,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'marciomazza/vim-brogrammer-theme'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
@@ -51,13 +52,14 @@ let g:solarized_termcolors = &t_Co
 let g:solarized_termtrans = 1
 
 " ctrlp
-let g:ctrlp_custom_ignore = 'node_modules'
+let g:ctrlp_custom_ignore = 'node_modules\|.git/'
 
 "style
 syntax on
-set background=light
-colorscheme solarized
-set t_Co=16
+"set background=light
+"colorscheme solarized
+"set t_Co=16
+colorscheme brogrammer
 set number                      "Line numbers
 set gcr=a:blinkon0              "Disable cursor blink
 set list listchars=tab:\ \ ,trail:· " show trailing spaces
