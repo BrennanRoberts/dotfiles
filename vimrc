@@ -23,6 +23,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 
@@ -57,12 +58,15 @@ let g:solarized_termtrans = 1
 " ctrlp
 let g:ctrlp_custom_ignore = 'node_modules\|.git/'
 
+" jsx
+let g:jsx_ext_required = 0
+
 "style
 syntax on
-"set background=light
-"colorscheme solarized
-"set t_Co=16
-colorscheme brogrammer
+set background=light
+colorscheme solarized
+set t_Co=16
+"colorscheme brogrammer
 set number                      "Line numbers
 set gcr=a:blinkon0              "Disable cursor blink
 set list listchars=tab:\ \ ,trail:· " show trailing spaces
