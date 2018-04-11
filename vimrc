@@ -51,6 +51,9 @@ let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
 
+" gitgutter
+set updatetime=100
+
 " solarized
 let g:solarized_termcolors = &t_Co
 let g:solarized_termtrans = 1
