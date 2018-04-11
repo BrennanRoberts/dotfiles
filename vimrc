@@ -59,7 +59,8 @@ let g:solarized_termcolors = &t_Co
 let g:solarized_termtrans = 1
 
 " ctrlp
-let g:ctrlp_custom_ignore = 'node_modules\|.git/'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = '.DS_Store\|.sass-cache\|bower_components\|build\|coverage\|node_modules\|\v[\/]\.(git|hg|svn)$'
 
 " jsx
 let g:jsx_ext_required = 0
