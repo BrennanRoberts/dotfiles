@@ -24,6 +24,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'hashivim/vim-terraform.git'
 
 call vundle#end()
 
