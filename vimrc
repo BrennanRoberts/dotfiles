@@ -25,6 +25,7 @@ Plugin 'tpope/vim-markdown'
 Plugin 'fatih/vim-go'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'hashivim/vim-terraform.git'
+Plugin 'w0rp/ale'
 
 call vundle#end()
 
@@ -65,6 +66,14 @@ let g:ctrlp_custom_ignore = '.DS_Store\|.sass-cache\|bower_components\|build\|co
 
 " jsx
 let g:jsx_ext_required = 0
+
+" terraform
+let g:terraform_fmt_on_save = 1
+
+" ale
+let g:ale_fixers = {}
+let g:ale_fixers['javascript'] = ['prettier']
+let g:ale_fix_on_save = 1
 
 "style
 syntax on
