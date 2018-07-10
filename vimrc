@@ -112,3 +112,6 @@ set shortmess=atI       " stifle unruly messages
 set novisualbell        " silence flash
 set noerrorbells        " silence ding
 
+" make jsx open/close tags the same
+" https://github.com/mxw/vim-jsx/issues/124
+hi link xmlEndTag xmlTag
