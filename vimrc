@@ -12,8 +12,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'marciomazza/vim-brogrammer-theme'
+Plugin 'chriskempson/base16-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'airblade/vim-gitgutter'
@@ -22,7 +21,6 @@ Plugin 'digitaltoad/vim-pug.git'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-markdown'
-Plugin 'fatih/vim-go'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'hashivim/vim-terraform.git'
 Plugin 'w0rp/ale'
@@ -54,10 +52,6 @@ let g:airline_theme='luna'
 " gitgutter
 set updatetime=100
 
-" solarized
-let g:solarized_termcolors = &t_Co
-let g:solarized_termtrans = 1
-
 " ctrlp
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = '.DS_Store\|.sass-cache\|bower_components\|build\|coverage\|node_modules\|\v[\/]\.(git|hg|svn)$'
@@ -75,10 +69,8 @@ let g:ale_fix_on_save = 1
 
 "style
 syntax on
-set background=light
-colorscheme solarized
-set t_Co=16
-"colorscheme brogrammer
+set background=dark
+colorscheme base16-rebecca
 set number                      "Line numbers
 set gcr=a:blinkon0              "Disable cursor blink
 set list listchars=tab:\ \ ,trail:· " show trailing spaces
