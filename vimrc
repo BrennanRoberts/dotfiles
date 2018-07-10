@@ -117,4 +117,6 @@ set scrolloff=8         "Start scrolling when we're 8 lines away from margins
 " misc
 set title               " window title
 set shortmess=atI       " stifle unruly messages
-set visualbell          " silence ding
+set novisualbell        " silence flash
+set noerrorbells        " silence ding
+
