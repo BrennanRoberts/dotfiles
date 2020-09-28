@@ -857,21 +857,21 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>880 726 799 448 0 0 2560 1417 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 588 620 392 0 0 1920 1177 </string>
+	<string>970 768 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>593 969 770 429 0 0 2560 1417 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>155 593 592 584 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1058 814 650 467 0 0 2560 1417 </string>
+	<string>24 673 650 467 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>102 92 1266 739 0 0 1920 1177 </string>
+	<string>815 17 650 467 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1187 421 978 960 0 0 2560 1417 </string>
+	<string>51 673 650 467 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>38 710 650 467 0 0 2560 1417 </string>
+	<string>15 16 650 467 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>65 204 1714 943 0 0 1920 1177 </string>
+	<string>65 680 650 467 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>427 157 1466 1011 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 6</key>
@@ -1702,17 +1702,19 @@
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.3.6</string>
-		<string>3.3.8</string>
-		<string>3.3.1</string>
-		<string>3.3.3</string>
-		<string>3.3.0beta13</string>
 		<string>3.3.5</string>
-		<string>3.3.7</string>
+		<string>3.3.3</string>
+		<string>3.3.1</string>
+		<string>3.3.8</string>
+		<string>3.3.0beta13</string>
+		<string>3.3.12</string>
+		<string>3.3.6</string>
+		<string>3.3.11</string>
+		<string>3.3.2</string>
 		<string>3.3.9</string>
 		<string>3.2.9</string>
-		<string>3.3.2</string>
 		<string>3.3.0</string>
+		<string>3.3.7</string>
 	</array>
 	<key>NoSyncConfirmRunOpenFile</key>
 	<true/>
@@ -1721,9 +1723,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1920, 1200}}</string>
 		<key>topLeft</key>
-		<string>{957, 1115}</string>
+		<string>{388, 816}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1736,7 +1738,7 @@
 	<key>NoSyncLastTipTime</key>
 	<real>572884859.26731396</real>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>95</integer>
+	<integer>143</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>583198380.06243706</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2546,11 +2548,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-03-02T18:31:19Z</date>
+	<date>2020-09-28T16:54:05Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateGroupIdentifier</key>
-	<integer>3407341375</integer>
+	<integer>1095200168</integer>
 	<key>SUUpdateRelaunchingMarker</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2578,7 +2580,7 @@
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.12</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
