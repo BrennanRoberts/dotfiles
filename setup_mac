@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+# exit when any command fails
+set -e
+
+function command_exists {
+  printf "Checking for $1 command... "
+  if command -v "$1" >/dev/null 2>&1; then
+    echo "Found"
+    return 0
+  else
+    echo "Not found"
+    return 1
+  fi
+}
+
+function dir_exists {
+  printf "Checking for $2 directory at $1... "
+  if [ -d $1 ]; then
+    echo "Found"
+    return 0
+  else
+    echo "Not found"
+    return 1
+  fi
+}
+
+function brew_package_installed {
+  printf "Checking if $1 brew package is installed... "
+  if brew ls --versions $1 > /dev/null; then
+    echo "Found"
+    return 0
+  else
+    echo "Not found"
+    return 1
+  fi
+}
+
+function install_xcode_tools {
+  echo "Installing Xcode Tools, will prompt for password..."
+  sudo xcode-select --install
+  echo "Xcode tools installed"
+}
+
+function install_homebrew {
+  echo "Installing homebrew"
+}
+
+function install_vundle {
+  echo "Installing Vundle"
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+}
+
+function install_vundle_plugins {
+	vim +PluginInstall +qall
+}
+
+install_xcode_tools
+#command_exists brew || install_homebrew
+#dir_exists ~/.vim/bundle/Vundle.vim vundle || install_vundle
+#install_vundle_plugins
