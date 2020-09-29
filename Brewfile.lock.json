@@ -67,6 +67,10 @@
       "antigen": {
         "version": "2.2.3",
         "bottle": false
+      },
+      "nodenv": {
+        "version": "1.4.0",
+        "bottle": false
       }
     }
   },
