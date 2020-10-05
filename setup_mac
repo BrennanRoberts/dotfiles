@@ -38,6 +38,7 @@ function install_homebrew {
 function install_homebrew_packages {
   echo "Installing Hombrew packages using brew bundle"
   brew bundle
+  echo "Set iTerm to use the preferences file in this directory (Preferences > General > Preferences > Load preferences from a custom folder or URL)"
 }
 
 function install_vundle {
