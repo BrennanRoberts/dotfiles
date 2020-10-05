@@ -53,8 +53,15 @@ function install_vundle_plugins {
 }
 
 function set_mac_prefs {
-  #"Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
+  # Enable right-click
+  defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
+  # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
   defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+  # Enable three-finger drag
+  defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+  defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 }
 
 install_xcode_tools
