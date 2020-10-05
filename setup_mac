@@ -38,7 +38,6 @@ function install_homebrew {
 function install_homebrew_packages {
   echo "Installing Hombrew packages using brew bundle"
   brew bundle
-  echo "Set iTerm to use the preferences file in this directory (Preferences > General > Preferences > Load preferences from a custom folder or URL)"
 }
 
 function install_vundle {
@@ -65,9 +64,16 @@ function set_mac_prefs {
   defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 }
 
+function set_iterm_prefs {
+  # set iterm to load preferences from this folder
+  defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+  defaults write com.googlecode.iterm2 PrefsCustomFolder -string $(pwd)
+}
+
 install_xcode_tools
 command_exists brew || install_homebrew
 install_homebrew_packages
 dir_exists ~/.vim/bundle/Vundle.vim vundle || install_vundle
 install_vundle_plugins
 set_mac_prefs
+set_iterm_prefs
