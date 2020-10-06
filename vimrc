@@ -168,3 +168,5 @@ let g:ale_set_highlights = 0
 " make jsx open/close tags the same
 " https://github.com/mxw/vim-jsx/issues/124
 hi link xmlEndTag xmlTag
+
+source ~/.vimrc_local

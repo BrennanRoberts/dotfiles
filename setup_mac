@@ -70,6 +70,34 @@ function set_iterm_prefs {
   defaults write com.googlecode.iterm2 PrefsCustomFolder -string $(pwd)
 }
 
+function install_vimrc {
+  printf "Installing vimrc..."
+
+  if [[ -L ~/.vimrc ]]; then
+    echo "Already installed"
+    return 0;
+  fi
+
+  touch ~/.vimrc
+  mv ~/.vimrc ~/.vimrc_local
+  ln -s $(pwd)/vimrc ~/.vimrc
+  echo "Done, existing ~/.vimrc moved to ~/.vimrc_local"
+}
+
+function install_zshrc {
+  printf "Installing zshrc..."
+
+  if [[ -L ~/.zshrc ]]; then
+    echo "Already installed"
+    return 0;
+  fi
+
+  touch ~/.zshrc
+  mv ~/.zshrc ~/.zshrc_local
+  ln -s $(pwd)/zshrc ~/.zshrc
+  echo "Done, existing ~/.zshrc moved to ~/.zsh_local"
+}
+
 install_xcode_tools
 command_exists brew || install_homebrew
 install_homebrew_packages
@@ -77,3 +105,5 @@ dir_exists ~/.vim/bundle/Vundle.vim vundle || install_vundle
 install_vundle_plugins
 set_mac_prefs
 set_iterm_prefs
+install_vimrc
+install_zshrc
