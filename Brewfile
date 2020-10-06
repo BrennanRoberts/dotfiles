@@ -8,3 +8,6 @@ tap "homebrew/cask-fonts"
 cask "font-fira-code"
 
 cask "iterm2"
+cask "rectangle"
+cask "google-chrome"
+cask "spotify"
