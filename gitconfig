@@ -3,10 +3,12 @@
 	br = branch
 	ci = commit
 	st = status
-  cleanup = “!git branch --merged | grep  -v ’\\*\\|master\\|develop’ | xargs -n 1 git branch -d”
+  cleanup = "!git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d"
 [pull]
 	ff = only
 [fetch]
 	prune = true
 [include]
     path = ~/.gitconfig_local
+[core]
+	excludesfile = /Users/brennan/.gitignore_global

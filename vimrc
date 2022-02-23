@@ -20,13 +20,15 @@ Plugin 'mxw/vim-jsx'
 Plugin 'digitaltoad/vim-pug.git'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'groenewege/vim-less'
+Plugin 'justinj/vim-pico8-syntax'
 Plugin 'tpope/vim-markdown'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'hashivim/vim-terraform.git'
 Plugin 'w0rp/ale'
 Plugin 'jparise/vim-graphql'
 Plugin 'tbastos/vim-lua'
-Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'neoclide/coc.nvim'
 
 
 
@@ -59,7 +61,7 @@ set updatetime=100
 
 " ctrlp
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = '.DS_Store\|.sass-cache\|bower_components\|build\|coverage\|node_modules\|\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = '.DS_Store\|.sass-cache\|bower_components\|build\|coverage\|node_modules\|vendor/bundle\|\v[\/]\.(git|hg|svn)$'
 
 " jsx
 let g:jsx_ext_required = 0
